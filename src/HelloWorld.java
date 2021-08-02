@@ -152,6 +152,40 @@ public class HelloWorld {
 
 
 
+        // #10
+//        int x = 5;
+//        System.out.println(x++); // returns 5
+//        System.out.println(x); // returns 6
 
+        int x = 5;
+        System.out.println(++x); // Adds 1 and then returns 6
+        System.out.println(x); // returns 6
+
+        // The difference is one takes the code runs it then prints and the other prints then runs
+
+        //#11
+        // You cant creat a class because it's already in a class?
+
+
+        //#12
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
+//        int three = (int) o;
+
+
+        //#13
+        int x = 4;
+        x = x + 5;
+
+        int x = 3;
+        int y = 4;
+        y = y * x;
+
+        int x = 10;
+        int y = 2;
+        x = x / y;
+        y = y - x;
+
+        //#14
     }
 }

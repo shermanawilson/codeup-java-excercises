@@ -8,12 +8,10 @@ public class StringExercise {
         String two = "Check \"this\" out!, \"s inside of \"s!";
         System.out.println(two);
 
-        String three = "In windows, the main drive is usually C:\\\n" +
-                "\n";
+        String three = "In windows, the main drive is usually C:\\\n" + "\n";
         System.out.println(three);
 
-        String four = "I can do backslashes \\, double backslashes \\\\,\n" +
-                "and the amazing triple backslash \\\\\\!\n";
+        String four = "I can do backslashes \\, double backslashes \\\\,\n" + "and the amazing triple backslash \\\\\\!\n";
 
         System.out.println(four);
 

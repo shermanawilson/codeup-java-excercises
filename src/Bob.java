@@ -11,7 +11,7 @@ public class Bob {
         if(userInput.endsWith("?")){
             System.out.println("Sure");
         }else if(userInput.endsWith("!")){
-            System.out.println("Whoa, Chill out!");
+            System.out.println("Whoa, chill out!");
         }else if(userInput.isEmpty()){
             System.out.println("Whatever");
         }else {
@@ -19,4 +19,4 @@ public class Bob {
         }
     }
 }
-//Yay
+

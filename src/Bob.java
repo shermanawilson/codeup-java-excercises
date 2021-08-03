@@ -7,7 +7,8 @@ public class Bob {
         // Empty -> Fine. Be that way!
         // Anything else -> Whatever
         Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
+        System.out.println("Say something to Bob.");
+        String userInput = scanner.nextLine().trim();
         if(userInput.endsWith("?")){
             System.out.println("Sure");
         }else if(userInput.endsWith("!")){

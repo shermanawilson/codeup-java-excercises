@@ -25,9 +25,13 @@ public class MethodsExercises {
 //        System.out.println(2 == div(20,10));
 
 
-        int userInput = getInteger(1, 10);
-        System.out.println(userInput);
 
+        //#2
+//        int userInput = getInteger(1, 10);
+//        System.out.println(userInput);
+
+        //#3
+        factorial();
     }
 
     public static int getInteger(int min, int max){
@@ -38,6 +42,19 @@ public class MethodsExercises {
                 return userResponse;
             }
         }while(true);
+    }
+
+    public static void factorial(){
+        int userInput = getInteger(1,10);
+        long fact = 1; // basket
+        for (int i = userInput; i > 0; i--) {
+            fact*=i;
+        }
+        System.out.println(fact);
+//        if (num <= 10) {
+//            return num;
+//        }
+//        return num * factorial(num - 1);
     }
 
     public static double sum(int num1, int num2){return num1 + num2;}

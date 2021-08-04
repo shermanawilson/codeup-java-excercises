@@ -16,7 +16,7 @@ public class HighLow {
        do{
            usersLastGuess = getUsersGuessedNumber();
            if(usersLastGuess > randomNumber ) {
-               System.out.println("Bruh, you need to goLOWER!");
+               System.out.println("Bruh, you need to go LOWER!");
            }else if(usersLastGuess < randomNumber) {
                System.out.println("My guy, go HIGHER!");
            }

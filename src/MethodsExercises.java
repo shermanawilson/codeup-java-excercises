@@ -31,12 +31,17 @@ public class MethodsExercises {
 //        System.out.println(userInput);
 
         //#3
-        factorial();
+//        factorial();
+        rollTheDice();
     }
+
+    //#4
+
+
 
     public static int getInteger(int min, int max){
         do{
-            System.out.print("Enter a number between 1 and 10: ");
+//            System.out.print("Enter a number between 1 and 10: ");
            int userResponse = scanner.nextInt();
             if(userResponse > min && userResponse < max) {
                 return userResponse;
@@ -51,11 +56,32 @@ public class MethodsExercises {
             fact*=i;
         }
         System.out.println(fact);
-//        if (num <= 10) {
-//            return num;
-//        }
-//        return num * factorial(num - 1);
     }
+
+    public static int getRandomNumber(int min, int max) {
+        return (int) ((Math.random() * (max - min)) + min);
+    }
+
+    public static void rollTheDice(){
+        System.out.println("Enter the number of sides of you dice!");
+        int numberOfSides = getInteger(2,20);//prompt user for number from 2-20
+
+        int firstRoll = getRandomNumber(1,numberOfSides);
+        int secondRoll = getRandomNumber(1,numberOfSides);
+
+        System.out.printf("First Die ===> %d\nSecond Die ===> %d\n",firstRoll,secondRoll);
+
+        System.out.println("Would you like to continue?");
+
+        Scanner userInput = new Scanner(System.in);
+        String usersResponse = userInput.nextLine();
+        boolean doesUserWantToContinue = usersResponse.toLowerCase().contains("y");
+
+        if(doesUserWantToContinue){
+            rollTheDice();
+        }
+    }
+
 
     public static double sum(int num1, int num2){return num1 + num2;}
 

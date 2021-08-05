@@ -43,11 +43,13 @@ public class MethodsExercises {
         do{
 //            System.out.print("Enter a number between 1 and 10: ");
            int userResponse = scanner.nextInt();
+
             if(userResponse > min && userResponse < max) {
                 return userResponse;
             }
         }while(true);
     }
+
 
     public static void factorial(){
         int userInput = getInteger(1,10);

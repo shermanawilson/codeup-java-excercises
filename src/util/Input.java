@@ -1,19 +1,27 @@
 package util;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
 
-
-    public String getString() {
-
+    public Input() {
+        this.scanner =  new Scanner(System.in);
     }
 
-    public boolean yesNo() {
+    public String getString() {
+        System.out.println("Say something: ");
+        String userInput = scanner.nextLine();
+        return userInput;
+    }
 
+
+    public boolean yesNo() {
+        System.out.println("Do you like candy? (y/n)?");
         String usersResponse = scanner.nextLine();
-        if(usersResponse.contains("y")) {
+        if(usersResponse.equals("yes") || usersResponse.contains("y")) {
             return true;
         }else {
             return false;
@@ -23,26 +31,42 @@ public class Input {
     int getInt(int min, int max){
 
         System.out.println("Give an integer between 1-10:");
-        int number = scanner.nextInt();
-        if(number < max) {
-
-        } else if(number > min){
-
-        }else {
-
+        int userResponse = scanner.nextInt();
+        if(userResponse <= min || userResponse > max) {
+            System.out.println("Yay! "  + userResponse + " is within the range");
+            return getInt(min,max);
+        } else{
+            System.out.println("");
+            return userResponse;
         }
     }
 
     int getInt(){
 
+
+        System.out.println("Give an integer between 1-10:");
+        int userResponse = scanner.nextInt();
+        return userResponse;
     }
 
     double getDouble(double min, double max){
 
+        System.out.println("Give an integer between 1-10:");
+        double userResponse = scanner.nextDouble();
+        if(userResponse < min || userResponse > max) {
+            System.out.println("Yay! "  + userResponse + " is within the range");
+            return getDouble(min,max);
+        } else{
+            System.out.println("That's a valid decimal");
+            return userResponse;
+        }
     }
 
     double getDouble(){
 
+        System.out.println("Give an integer between 1-10:");
+        double userResponse = scanner.nextDouble();
+        return userResponse;
     }
 
 }//end of input

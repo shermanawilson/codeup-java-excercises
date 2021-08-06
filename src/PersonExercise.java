@@ -2,6 +2,7 @@ public class PersonExercise {
 
     private String firstName;
     private String lastName;
+    private String age;
 
     // class is blue print , idea of that person
     // the object is the instance of that class

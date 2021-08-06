@@ -62,7 +62,7 @@ public class Input {
         }
     }
 
-    double getDouble(){
+    public double getDouble(){
 
         System.out.println("Give an integer between 1-10:");
         double userResponse = scanner.nextDouble();

@@ -15,10 +15,9 @@ public class AnimalFarm {
        genericAnimal = new Cat();
        genericAnimal.makeNoise();
 
-       Cat catLady = new Cat();
-       catLady.purr();
+        ( (Cat) genericAnimal ).purr(); // this is casting
 
-       genericAnimal.purr(); // purr is specific to Cat, there is no function like that in Animal
+//       genericAnimal.purr(); // purr is specific to Cat, there is no function like that in Animal
 
     }
 }

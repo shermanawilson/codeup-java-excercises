@@ -2,6 +2,8 @@ package abstraction;
 
 public class Pig extends Animal {
 
+    // a Blank is a Blank of whatever
+
     public Pig(String animalName) {
         super(animalName);
     }

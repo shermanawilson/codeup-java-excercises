@@ -49,15 +49,15 @@ public class AnimalFarm {
         //Array
 
         Animal [] animals = new Animal[MAX_ANIMALS];
-        animals[0] = new Snake("beth");
-        animals[1] = new Pig("john");
-        animals[2] = new Chicken("tim");
-        animals[3] = new Dog("billy");
-        animals[4] = new Snake("jessy");
+        animals[0] = new Snake("Beth");
+        animals[1] = new Pig("John");
+        animals[2] = new Chicken("Tim");
+        animals[3] = new Dog("Billy");
+        animals[4] = new Snake("Jessy");
 
 
         for (int i = 0; i < animals.length; i++) {
-            System.out.printf("The %s goes: ",animals[i].getClass().getSimpleName());
+            System.out.printf("%s The %s goes: ",animals[i].getAnimalName() ,animals[i].getClass().getSimpleName());
 
             // .getClass().getSimpleName() - gets concrete subclasses name as string
 

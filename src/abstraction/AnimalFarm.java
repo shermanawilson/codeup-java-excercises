@@ -2,7 +2,7 @@ package abstraction;
 
 public class AnimalFarm {
 
-    public static final int MAX_ANIMALS = 5;
+    public static final int MAX_ANIMALS = 6;
 
     public static void main(String[] args) {
         Animal animal; // cannot create new though, abstract var
@@ -46,6 +46,16 @@ public class AnimalFarm {
 
         System.out.println("");
 
+        Dog delly = new Dog("dells");
+        delly.makesSound();
+        delly.breath(12);
+        delly.walk();
+
+        System.out.println("======================");
+
+        System.out.println("");
+
+
         //Array
 
         Animal [] animals = new Animal[MAX_ANIMALS];
@@ -54,6 +64,7 @@ public class AnimalFarm {
         animals[2] = new Chicken("Tim");
         animals[3] = new Dog("Billy");
         animals[4] = new Snake("Jessy");
+        animals[5] = new Duck("Shy");
 
 
         for (int i = 0; i < animals.length; i++) {

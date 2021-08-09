@@ -12,6 +12,19 @@ package abstraction;
 
 public abstract class Animal {
 
+    protected String animalName;
+
+    public String getAnimalName() {
+        return animalName;
+    }
+
+    public void setAnimalName(String animalName) {
+        this.animalName = animalName;
+    }
+
+    public Animal(String animalName) {
+        this.animalName = animalName;
+    }
 
     public void walk(){
         System.out.println("Walks around a bit");

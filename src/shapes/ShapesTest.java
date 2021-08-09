@@ -9,8 +9,12 @@ public class ShapesTest {
 
         System.out.println("=======================");
 
-        Rectangle box2 = new Square(5);
-        System.out.println("Box 2 Perimeter: " + box2.getPerimeter());
-        System.out.println("Box 2 Area: " + box2.getArea());
+//        Rectangle box2 = new Square(5);
+//        System.out.println("Box 2 Perimeter: " + box2.getPerimeter());
+//        System.out.println("Box 2 Area: " + box2.getArea());
+
+
+        Measurable myShape = new Square(32);
+        System.out.println(myShape.getArea());
     }
 }

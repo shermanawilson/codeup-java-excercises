@@ -58,7 +58,7 @@ public class AnimalFarm {
 
         //Array
 
-        Animal [] animals = new Animal[MAX_ANIMALS];
+        Animal[] animals = new Animal[MAX_ANIMALS];
         animals[0] = new Snake("Beth");
         animals[1] = new Pig("John");
         animals[2] = new Chicken("Tim");
@@ -67,25 +67,37 @@ public class AnimalFarm {
         animals[5] = new Duck("Shy");
 
 
+//        Pig tempPig = (Pig) animals[1];
+//        tempPig.fly();
+
+//        for (int i = 0; i < animals.length; i++) {
+//            System.out.printf("%s The %s goes: ",animals[i].getAnimalName() ,animals[i].getClass().getSimpleName());
+//
+//            // .getClass().getSimpleName() - gets concrete subclasses name as string
+//
+//            animals[i].makesSound();
+//
+//            //take class info and check objects parental higherachy
+//            if(animals[i] instanceof Snake){
+//                Snake tempSnake = (Snake) animals[i];
+//                // casting (Snake), forcing
+//                tempSnake.injectV();
+
+
+        //make the animals who can fly, fly
         for (int i = 0; i < animals.length; i++) {
-            System.out.printf("%s The %s goes: ",animals[i].getAnimalName() ,animals[i].getClass().getSimpleName());
-
-            // .getClass().getSimpleName() - gets concrete subclasses name as string
-
-            animals[i].makesSound();
-
-            //take class info and check objects parental higherachy
-            if(animals[i] instanceof Snake){
-                Snake tempSnake = (Snake) animals[i];
-                // casting (Snake), forcing
-                tempSnake.injectV();
+            if (animals[i] instanceof FlightCapable) {
+                System.out.printf("I found A(n) %s that can fly: ", animals[i].getClass().getSimpleName());
+                 FlightCapable tempFlyer = (FlightCapable) animals[i];
+                 tempFlyer.fly();
             }
-
-
         }
-
-
-
     }
-
 }
+
+
+
+
+
+
+

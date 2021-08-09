@@ -15,4 +15,6 @@ public class Duck extends Animal implements FlightCapable {
     public void fly() {
         System.out.println("Yoooo I can defiantly fly bro");
     }
+
+
 }

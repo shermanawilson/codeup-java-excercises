@@ -62,7 +62,7 @@ public class AnimalFarm {
         animals[0] = new Snake("Beth");
         animals[1] = new Pig("John");
         animals[2] = new Chicken("Tim");
-        animals[3] = new Dog("Billy");
+        animals[3] = new Tweetie("Billy");
         animals[4] = new Snake("Jessy");
         animals[5] = new Duck("Shy");
 
@@ -88,16 +88,14 @@ public class AnimalFarm {
         for (int i = 0; i < animals.length; i++) {
             if (animals[i] instanceof FlightCapable) {
                 System.out.printf("I found A(n) %s that can fly: ", animals[i].getClass().getSimpleName());
-                 FlightCapable tempFlyer = (FlightCapable) animals[i];
-                 tempFlyer.fly();
+                FlightCapable tempFlyer = (FlightCapable) animals[i];
+                tempFlyer.fly();
             }
         }
     }
+
+
 }
-
-
-
-
 
 
 

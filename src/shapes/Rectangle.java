@@ -15,13 +15,13 @@ public class Rectangle {
 
     public double getPerimeter(){
         double perimeter = (2 * length) + (2 * width);
-        System.out.println(perimeter);
+//        System.out.println(perimeter);
         return perimeter;
     }
 
     public double getArea(){
         double area = length * width;
-        System.out.println(area);
+//        System.out.println(area);
         return area;
 
     }

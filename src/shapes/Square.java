@@ -20,4 +20,14 @@ public class Square extends Quadrilateral{
         double side =  super.length;
         return side * side;
     }
+
+    @Override
+    public void setWidth(double width) {
+
+    }
+
+    @Override
+    public void setLength(double length) {
+
+    }
 }

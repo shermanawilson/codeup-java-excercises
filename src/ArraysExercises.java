@@ -34,10 +34,11 @@ public class ArraysExercises {
 
         people = addPerson(people,new Person("Aria"));
 
-        //This is the same exact thing as the for i loop above
+        //This is the same exact thing as the for i loop above // Enhanced for loop!!
         for (Person person : people) {
             System.out.print(person.getName() + " | ");
         }
+
 
 
 

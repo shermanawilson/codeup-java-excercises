@@ -15,12 +15,16 @@ public class ShapesTest {
 
         System.out.println("*** Measurable Section ***");
 
+        System.out.println("=======================");
+
         Measurable myShape = new Square(11);
-        System.out.println("New Square Perimeter: " + myShape.getPerimeter());
-        System.out.println("New Square Area: " + myShape.getArea());
+        System.out.println("New Square Perimeter Is: " + myShape.getPerimeter());
+        System.out.println("New Square Area Is: " + myShape.getArea());
+
+        System.out.println("=======================");
 
         Measurable myOtherShape = new Rectangle(5, 12);
-        System.out.println("New Rectangle Perimeter: " + myOtherShape.getPerimeter());
-        System.out.println("New Rectangle Area: " + myOtherShape.getArea());
+        System.out.println("New Rectangle Perimeter Is: " + myOtherShape.getPerimeter());
+        System.out.println("New Rectangle Area Is: " + myOtherShape.getArea());
     }
 }

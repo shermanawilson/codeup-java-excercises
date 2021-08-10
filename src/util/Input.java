@@ -28,15 +28,15 @@ public class Input {
         }
     }
 
-    int getInt(int min, int max){
+    public int getInt(int min, int max){
 
-        System.out.println("Give an integer between 1-10:");
+//        System.out.println("Give an integer between 1-10:");
         int userResponse = scanner.nextInt();
-        if(userResponse <= min || userResponse > max) {
-            System.out.println("Yay! "  + userResponse + " is within the range");
+        if(userResponse < min || userResponse > max) {
+//            System.out.println("Yay! "  + userResponse + " is within the range");
             return getInt(min,max);
         } else{
-            System.out.println("");
+//            System.out.println("");
             return userResponse;
         }
     }

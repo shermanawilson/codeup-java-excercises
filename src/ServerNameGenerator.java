@@ -18,7 +18,7 @@ public class ServerNameGenerator {
     public static void main(String[] args) {
 
         System.out.println("Here is your server names:");
-        System.out.println(randomStringFromArray(adjectives));
+        System.out.println("Adjective: " + randomStringFromArray(adjectives) + " - " + "Noun: " + randomStringFromArray(nouns));
 
     }
 

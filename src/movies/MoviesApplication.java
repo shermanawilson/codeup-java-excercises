@@ -53,6 +53,13 @@ public class MoviesApplication {
     }
 
 
+//    public static void viewMovieByName(String name) {
+//        for(Movie movie : MoviesArray.findAll()) {
+//            if(movie.getName().equalsIgnoreCase(name)) {
+//                System.out.printf("%s --,%s -- ,%s\n", movie.getName(), movie.getCategory(), movie.getYear());
+//            }
+//        }
+//    }
 
     private static void viewMovieByCategory(String category) {
         for(Movie movie : MoviesArray.findAll()) {

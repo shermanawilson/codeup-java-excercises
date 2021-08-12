@@ -28,7 +28,7 @@ public class Input {
         }
     }
 
-    public int getInt(int min, int max){
+    public static int getInt(int min, int max){
 
 //        System.out.println("Give an integer between 1-10:");
         int userResponse = scanner.nextInt();
@@ -41,10 +41,10 @@ public class Input {
         }
     }
 
-    int getInt(){
+    public static int getInt(){
 
 
-        System.out.println("Give an integer between 1-10:");
+//        System.out.println("Give an integer between 1-10:");
         int userResponse = scanner.nextInt();
         return userResponse;
     }

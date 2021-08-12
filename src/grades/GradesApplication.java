@@ -33,12 +33,24 @@ public class GradesApplication {
         anjel.addGrade(91);
         anjel.addGrade(98);
 
+        Student jammie = new Student("Jammie");
+        jammie.addGrade(92);
+        jammie.addGrade(68);
+        jammie.addGrade(84);
+
+        Student jessie = new Student("Jessie");
+        jessie.addGrade(77);
+        jessie.addGrade(45);
+        jessie.addGrade(66);
+
 
         // They are the Keys
         students.put("chelly-wilson", chelle);
         students.putIfAbsent("bethsusername", beth);
         students.putIfAbsent("weirdostuff", john);
         students.putIfAbsent("thisother", anjel);
+        students.putIfAbsent("jammie-firebase", jammie);
+        students.putIfAbsent("jessie-master", jessie);
 
         commandLineInterface(students);
 
@@ -60,7 +72,7 @@ public class GradesApplication {
                 System.out.print("|" + key + "| ");
             }
 
-            System.out.println("What student would you like to see more information on?");
+            System.out.println("\n\nWhat student would you like to see more information on?");
 
             String userKey = input.getString();
 
@@ -75,7 +87,7 @@ public class GradesApplication {
                 System.out.println("Sorry bout that, there aren't any student's with the GitHub username: " + userKey);
             }
 
-            System.out.println("Would you like to see another student?");
+            System.out.println("\nWould you like to see another student?");
         }while(Input.yesNo());
 
         System.out.println("Good bye :)");

@@ -5,21 +5,21 @@ import org.w3c.dom.ls.LSOutput;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner;
+    public static Scanner scanner;
 
     public Input() {
         this.scanner =  new Scanner(System.in);
     }
 
     public String getString() {
-        System.out.println("Say something: ");
+//        System.out.println("Say something: ");
         String userInput = scanner.nextLine();
         return userInput;
     }
 
 
-    public boolean yesNo() {
-        System.out.println("Do you like candy? (y/n)?");
+    public static boolean yesNo() {
+//        System.out.println("Do you like candy? (y/n)?");
         String usersResponse = scanner.nextLine();
         if(usersResponse.equals("yes") || usersResponse.contains("y")) {
             return true;

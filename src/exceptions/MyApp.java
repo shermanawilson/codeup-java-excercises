@@ -57,9 +57,15 @@ public class MyApp {
     }
 
 
-
+    private void printMenu() {
+        System.out.println("Enter 1 or 2 or 3: ");
+    }
 
     public static void main(String[] args) {
+
+        // 1. Create an app object
+        //2. run the menu loop
+        //3. exit the program when user enter the quit option
 
         MyApp myApp = new MyApp(); // 1.
 
@@ -68,17 +74,7 @@ public class MyApp {
         System.out.println("End of program");
 
 
-
     }
-
-    private void printMenu() {
-        System.out.println("Enter 1 or 2 or 3: ");
-    }
-
-    // 1. Create an app object
-    //2. run the menu loop
-    //3. exit the program when user enter the quit option
-
 
 
 }

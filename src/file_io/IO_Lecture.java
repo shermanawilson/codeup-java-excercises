@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,7 +71,7 @@ public class IO_Lecture {
 
         // Each string that we add tot he fileContents Collection will
         // represent a line to write on the file
-        fileContents.add("Say Hello Ya'll");
+        fileContents.add("Say you're going to have to much fun with the say command");
 
         // Path for directory
         Path dataDirectory = Paths.get(directory);
@@ -90,7 +91,7 @@ public class IO_Lecture {
 
 
         // This will write contents to the file
-        Files.write(dataFile, fileContents);
+        Files.write(dataFile, fileContents, StandardOpenOption.APPEND);
 
 
         //This is how you will read a files contents and store it in a collection
